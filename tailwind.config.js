@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [/./cameron/portfolio/index.html],
+  content: ["./index.html"],
   theme: {
     extend: {},
   },

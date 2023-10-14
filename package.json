@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My development portfolio site.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CameronChuy.github.io"
+  },
+  "keywords": [
+    "Cameron",
+    "portfolio",
+    "web",
+    "software",
+    "developer"
+  ],
+  "author": "Cameron Cary",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
