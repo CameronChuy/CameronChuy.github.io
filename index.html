@@ -9,33 +9,51 @@
 
 </head>
 
-<body>
-    <h1 class="text-green-900 text-5xl">Cameron Cary</h1>
-    <p class="p-4">I'm a dedicated software developer with four years of coding experience. 
-        I'm currently pursuing a Computer Programming degree and hold a CS50X certificate. 
-        Let me put my passion and expertise to work for your projects, whether it's web development, database optimization, or creating user-friendly interfaces. 
-        I am excited to work with your team!</p>
-
-    <div class="bg-slate-400">
-        <h2 class="text-2xl">Projects</h2>
-            <h3>macroTRAC</h3>
-            <h2>Something else</h2>
-            <h2>Last showcase item</h2>
-        <h2 class="text-2xl">Technology</h2>
-        <div class="flex">
-            <div class="flex flex-col items-center max-w-[20vw]">
-                <svg href="<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="20vw" height="auto" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="html5 svg">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
-                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
-                </svg>
-                <p class="text-lg">Html 5</p>
-             </div>
-        </div>
+<body class="bg-slate-800">
+  <div class="flex align-center justify-between pt-3.5">
+    <div>
+      <h1 class="text-green-900 text-5xl">Cameron Cary</h1>
     </div>
     <div>
-        <form class= "p-2 m-2 bg-slate-200 border-slate-500 border-4 rounded-sm space-y-2 justify-start">
-            <h1 class = text-2xl >Contact Me</h1>
+      <p class="p-4 max-h-svh">I'm a dedicated software developer with four years of coding experience. 
+          I'm currently pursuing a Computer Programming degree and hold a CS50X certificate. 
+          Let me put my passion and expertise to work for your projects, whether it's web development, database optimization, or creating user-friendly interfaces. 
+          I am excited to work with your team!</p>
+    </div>
+  </div>
+      
+
+    <div class="flex flex-col bg-slate-600">
+        <div class="flex bg-red-600 justify-center">
+          <h2 class="text-2xl">Projects</h2>
+        </div>
+        <div class="flex justify-between p-4 bg-indigo-600">
+          <div class="bg-slate-900">
+            <img class="p-2" src="./assets/StoreFront Nikki.png">
+            <h2>DrippyHippy Storefront</h2>
+            <p>Description</p>
+          </div>
+          <div>
+            <img class="h-auto w-1/2" src="./assets/Stacts.png">
+            <h2>Stacts</h2>
+            <p>Description</p>
+          </div>
+        </div>
+    </div>
+    <div class="flex justify-center align-center">
+        <h2 class="text-2xl">Technology</h2>
+          <div class="flex flex-col items-center max-w-[20vw]">
+              <svg href="<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="20vw" height="auto" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="html5 svg">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+              </svg>
+              <p class="text-lg">Html 5</p>
+            </div>
+    </div>
+    <div>
+        <form class= "flex flex-col p-2 m-2 bg-slate-200 border-slate-500 border-4 rounded-md space-y-2">
+            <h1 class = "text-2xl" >Contact Me</h1>
             <div class = "flex flex-col" >
               <label for contactName class = "text-lg">Name</label>
               <input type = "text" id = "contactName" placeholder = "Your name and/or company" class = "border-yellow-700 border-2 rounded-sm">
