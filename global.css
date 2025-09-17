@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test {
+    background-color: #fffafa;
+    @apply dark:bg-background;
+}
+
+.project-container {
+    @apply relative flex flex-row gap-4;
+}
+
+.project-card {
+    @apply relative flex flex-col bg-background-light dark:bg-gray-900/70 rounded-2xl overflow-hidden shadow-lg border border-accent/50 p-6;
+}
+
+.view-btn {
+    @apply hidden mt-auto self-start font-accent font-semibold uppercase tracking-wide bg-primary text-white px-5 py-2 rounded-lg shadow hover:bg-primary transition;
+}
+
+.vert-neon {
+    @apply self-stretch w-1 bg-primary rounded-full;
+
+    box-shadow: 0 0 20px 4px #D50032;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px 2px var(--glow-color);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px var(--glow-color);
+  }
+}
+
+.glow-badge {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.carousel {
+    perspective: 1000px;
+}
+.carousel__wrapper {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.carousel__card {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rainbow-border {
+    background: linear-gradient(
+        to bottom right,
+        #b91c1c,
+        /* red-700 */ #c2410c,
+        /* orange-700 */ #ca8a04,
+        /* yellow-700 */ #15803d,
+        /* green-700 */ #1d4ed8,
+        /* blue-700 */ #4338ca /* indigo-700 */
+    );
+}
+
+.border-animation::before {
+    content: '';
+    position: absolute;
+    inset: -100%;
+    background: conic-gradient(
+        from 0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 5%,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: spinborder 4s linear infinite;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+@keyframes spinborder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.icon {
+    border: #b91c1c;
+    border-radius: 100%;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: #b91c1c;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.left-container {
+    left: 0;
+}
+
+.text-box {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}

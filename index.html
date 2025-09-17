@@ -1,76 +1,727 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cameron Cary</title>
 
-<html lang="en-us">
+        <link href="/tailwind.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&family=Space+Grotesk:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
+    <body
+        class="bg-background-light text-gray-800 dark:bg-background dark:text-gray-200"
+    >
+        <!-- Navbar -->
+        <nav
+            class="w-full fixed top-0 left-0 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm z-50"
+        >
+            <div
+                class="max-w-5xl mx-auto flex justify-between items-center p-4"
+            >
+                <h1
+                    class="font-heading text-2xl font-bold text-primary dark:text-accent"
+                >
+                    Cameron Cary
+                </h1>
+                <div class="space-x-4">
+                    <a
+                        href="#about"
+                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
+                        >About</a
+                    >
+                    <a
+                        href="#projects"
+                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
+                        >Projects</a
+                    >
+                    <a
+                        href="#contact"
+                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
+                        >Contact</a
+                    >
+                    <button
+                        id="theme-toggle"
+                        class="font-accent font-semibold uppercase text-sm px-3 py-1 border rounded-lg"
+                    >
+                        Toggle Theme
+                    </button>
+                </div>
+            </div>
+        </nav>
 
-</head>
+        <!-- Hero Section -->
+        <section
+            class="flex flex-col justify-center items-center text-center min-h-screen px-4"
+            id="hero"
+        >
+            <h2
+                class="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-4"
+            >
+                Howdy, I'm <span class="text-primary">Cameron Cary</span>
+            </h2>
+            <p
+                class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8"
+            >
+                Crafting reliable, maintainable web solutions that just work—front to back.
+            </p>
+            <a
+                href="#projects"
+                class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary transition"
+            >
+                View My Work
+            </a>
+        </section>
 
-<body class="bg-slate-800">
-  <div class="flex align-center justify-between pt-3.5">
-    <div>
-      <h1 class="text-green-900 text-5xl">Cameron Cary</h1>
-    </div>
-    <div>
-      <p class="p-4 max-h-svh">I'm a dedicated software developer with four years of coding experience. 
-          I'm currently pursuing a Computer Programming degree and hold a CS50X certificate. 
-          Let me put my passion and expertise to work for your projects, whether it's web development, database optimization, or creating user-friendly interfaces. 
-          I am excited to work with your team!</p>
-    </div>
-  </div>
-      
+        <!-- About Section -->
+        <section id="about" class="max-w-4xl mx-auto py-20 px-4">
+            <h3
+                class="font-heading text-4xl font-bold mb-6 text-center text-primary"
+            >
+                About Me
+            </h3>
+            <p
+                class="font-sans text-lg leading-relaxed text-gray-400 text-center"
+            >
+                Software developer with a strong background in PHP, Python, and
+                custom frameworks. I’ve built applications that streamline
+                operations, reduce project bottlenecks, and improve compliance
+                tracking across large organizations. I enjoy mentoring others,
+                defining development standards, and designing systems that last.
+            </p>
+        </section>
 
-    <div class="flex flex-col bg-slate-600">
-        <div class="flex bg-red-600 justify-center">
-          <h2 class="text-2xl">Projects</h2>
-        </div>
-        <div class="flex justify-between p-4 bg-indigo-600">
-          <div class="bg-slate-900">
-            <img class="p-2" src="./assets/StoreFront Nikki.png">
-            <h2>DrippyHippy Storefront</h2>
-            <p>Description</p>
-          </div>
-          <div>
-            <img class="h-auto w-1/2" src="./assets/Stacts.png">
-            <h2>Stacts</h2>
-            <p>Description</p>
-          </div>
-        </div>
-    </div>
-    <div class="flex justify-center align-center">
-        <h2 class="text-2xl">Technology</h2>
-          <div class="flex flex-col items-center max-w-[20vw]">
-              <svg href="<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="20vw" height="auto" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" alt="html5 svg">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
-                <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
-              </svg>
-              <p class="text-lg">Html 5</p>
+        <!-- Experience -->
+        <section id="experience" class="max-w-4xl mx-auto py-20 px-4">
+            <h3 class="text-3xl font-bold mb-6 text-center text-primary">
+                Experience
+            </h3>
+
+            <div
+                class="bg-background-light dark:bg-gray-900/70 rounded-2xl shadow-lg border border-accent/50 p-6"
+            >
+                <h4 class="text-xl font-semibold text-primary mb-1">
+                    Software Developer (Head of Software Team) — California
+                    State Government
+                </h4>
+                <p class="text-gray-600 dark:text-gray-400 mb-4 italic">
+                    Feb 2023 – Present
+                </p>
+
+                <p class="text-gray-500 dark:text-gray-300 mb-4">
+                    Worked in a compliance-driven government unit without an
+                    existing software division, co-founding and leading a new
+                    development function. Operated under strict tooling
+                    restrictions (limited external libraries or package
+                    managers) while building modern, scalable solutions to
+                    improve efficiency across Northern CalTrans. Collaborated
+                    directly with stakeholders to define workflows, reduce
+                    bottlenecks, and deliver applications far faster than the
+                    centralized IT group.
+                </p>
+
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Reduced project delivery time from
+                            <span class="font-semibold text-primary"
+                                >18 months to 6 weeks</span
+                            >
+                            by introducing agile practices and leading
+                            architecture design.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Co-created a Laravel-inspired
+                            <span class="font-semibold text-primary"
+                                >vanilla PHP framework</span
+                            >
+                            under policy constraints, enabling modern
+                            development without external libraries.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Established
+                            <span class="font-semibold text-primary"
+                                >Git workflows, coding standards, and dev
+                                environments</span
+                            >
+                            for team-wide adoption.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Developed a
+                            <span class="font-semibold text-primary"
+                                >DevOps monitoring suite</span
+                            >
+                            with traffic analysis and automated error
+                            alerts.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Automated
+                            <span class="font-semibold text-primary"
+                                >data pipelines</span
+                            >, eliminating weekly maintenance and serving
+                            Northern CalTrans.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Led and mentored interns; collaborated on
+                            <span class="font-semibold text-primary"
+                                >database architecture and migration
+                                planning</span
+                            >.</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="w-5 h-5 text-primary flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                        <span
+                            >Spearheaded
+                            <span class="font-semibold text-primary"
+                                >stakeholder communication workflows</span
+                            >, improving transparency and alignment.</span
+                        >
+                    </li>
+                </ul>
             </div>
-    </div>
-    <div>
-        <form class= "flex flex-col p-2 m-2 bg-slate-200 border-slate-500 border-4 rounded-md space-y-2">
-            <h1 class = "text-2xl" >Contact Me</h1>
-            <div class = "flex flex-col" >
-              <label for contactName class = "text-lg">Name</label>
-              <input type = "text" id = "contactName" placeholder = "Your name and/or company" class = "border-yellow-700 border-2 rounded-sm">
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4">
+            <h3
+                class="font-heading text-4xl font-bold mb-16 text-center text-primary"
+            >
+                Paid Projects
+            </h3>
+            <div
+                class="bg-yellow-200/30 backdrop-blur-md border border-yellow-400/60 text-yellow-600 font-semibold rounded-xl w-full p-3 my-4 text-center shadow-[0_0_15px_rgba(255,223,0,0.6)]"
+            >
+                ⚠️ Notice: Content undergoing NDA redaction process
             </div>
-            <div class = "flex flex-col">
-              <label for contactEmail class = "text-lg">Return email address</label>
-              <input type = "text" id = "contactEmail" placeholder = "Email address" class = "border-yellow-700 border-2 rounded-sm">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Timeline item
+                <div class="project-card">
+                    Vertical neon line
+                    <div
+                        class="vert-neon"
+                    ></div>
+                    <div
+                        class="project-card"
+                    >
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            DMU Data Extraction Automation
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            Automate data extraction process across the CalTrans
+                            software suite utilizing Python and PlayWright.
+                        </p>
+                        <a
+                            href="#"
+                            class="view-btn"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            Nikke
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            A web application and framework utility that tracks
+                            usage across the NR COS DMU software suite and
+                            provides ongoing data analysis.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            Construction Webtool
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            Web platform replacing the North Region Construction
+                            Administration division’s FileMaker system, with
+                            capabilities for managing employees, tracking
+                            project associations, and verifying contractor
+                            obligations and labor compliance.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            CTC
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            A web application that allows project managers to
+                            track at-risk projects, log critical events, and
+                            prepare items for presentation to the California
+                            Transportation Commission.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            Resource Request Tool (RRT)
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            A web application for centralized project managers
+                            to request time commitment resource estimations from
+                            organization units for individual tasks.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            Lessons Learned
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            A web application for logging project improvement
+                            insights to support more accurate resource
+                            estimation on future, similar projects.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Timeline item -->
+                <div class="project-container">
+                    <!-- Vertical neon line -->
+                    <div class="vert-neon"></div>
+                    <div class="project-card">
+                        <h3
+                            class="font-accent text-2xl font-semibold text-primary mb-2"
+                        >
+                            PS-QMP
+                        </h3>
+                        <p class="font-sans text-gray-400 mb-4">
+                            A simple web application built to track the
+                            verification of key project milestone completion.
+                        </p>
+                        <a href="#" class="view-btn"> View Project </a>
+                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Project Card with image -->
+                <!-- <div class="max-w-4xl mx-auto my-10">
+                    <div
+                        class="bg-gray-800/60 dark:bg-gray-900/70 rounded-2xl overflow-hidden shadow-lg border border-accent/50 hover:shadow-accent/40 transition"
+                    > -->
+                <!-- Image (optional) -->
+                <!-- <div class="aspect-video bg-gray-700">
+                            <img
+                                src="https://via.placeholder.com/800x450"
+                                alt="Project preview"
+                                class="w-full h-full object-cover"
+                            />
+                        </div> -->
+
+                <!-- Content -->
+                <!-- <div class="p-6">
+                            <h3
+                                class="font-accent text-2xl font-semibold text-primary mb-2"
+                            >
+                                Project Title
+                            </h3>
+                            <p class="font-sans text-gray-400 mb-4">
+                                A short description of the project. Explain what
+                                it does, why it's cool, or the tech stack you
+                                used.
+                            </p> -->
+
+                <!-- Tags / Tech stack -->
+                <!-- <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
+                                >
+                                    PHP
+                                </span>
+                                <span
+                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
+                                >
+                                    Tailwind
+                                </span>
+                                <span
+                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
+                                >
+                                    MySQL
+                                </span>
+                            </div> -->
+
+                <!-- CTA -->
+                <!-- <a
+                                href="#"
+                                class="view-btn"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-            <div class = "flex flex-col">
-              <label for contactMSG class = "text-lg">Message</label>
-              <textarea type = "text" id = "contactMSG" placeholder = "Start Typing" class = "border-yellow-700 border-2 rounded-sm"></textarea>
-            </div>
-            <div class = "flex justify-between">
-              <button type = "reset" class = "p-2 border-2 border-rose-600 rounded-md bg-rose-400 hover:bg-red-600">Cancel</button>
-              <button type = "button" onclick = onSubmit() class = "p-2 border-2 border-emerald-600 rounded-md bg-emerald-400 hover:bg-green-700">Send</button>
-            </div>
-          </form>
-    </div>
-</body>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="max-w-3xl mx-auto py-20 px-4 text-center">
+            <h3 class="font-heading text-3xl font-bold mb-6 text-primary">
+                Get In Touch
+            </h3>
+            <p class="font-sans text-lg text-gray-400 mb-6">
+                Feel free to reach out if you'd like to collaborate or just say
+                hi!
+            </p>
+            <a
+                href="mailto:your@email.com"
+                class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary transition"
+            >
+                Say Hello
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="font-sans text-center py-6 text-gray-500 text-sm">
+            © 2025 Cameron Cary. All rights reserved.
+        </footer>
+    </body>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle')
+        const root = document.documentElement // or document.body
+
+        // Load saved preference
+        if (localStorage.getItem('theme') === 'dark') {
+            root.classList.add('dark')
+        }
+
+        themeToggle.addEventListener('click', () => {
+            root.classList.toggle('dark')
+            if (root.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark')
+            } else {
+                localStorage.setItem('theme', 'light')
+            }
+        })
+        const techMeta = {
+            PHP: {
+                color: '#777BB4',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+            },
+            Laravel: {
+                color: '#FF2D20',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
+            },
+            MySQL: {
+                color: '#4479A1',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+            },
+            SQLServer: {
+                color: '#4479A1',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
+            },
+            Docker: {
+                color: '#2496ED',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+            },
+            Python: {
+                color: '#3776AB',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+            },
+            Flask: {
+                color: '#000000',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
+                invertInDark: true,
+            },
+            Django: {
+                color: '#092E20',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
+            },
+            NextJS: {
+                color: '#000000',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+                invertInDark: true,
+            },
+            Tailwind: {
+                color: '#38BDF8',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+            },
+            BootStrap: {
+                color: '#7952B3',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
+            },
+            JavaScript: {
+                color: '#F7DF1E',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            },
+            HTML5: {
+                color: '#E34F26',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+            },
+            CSS3: {
+                color: '#1572B6',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+            },
+            Git: {
+                color: '#F05032',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+            },
+            Linux: {
+                color: '#FCC624',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+            },
+            HTMX: {
+                color: '#3465A4',
+                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg',
+            },
+        }
+
+        const projectTech = {
+            Nikke: ['PHP', 'JavaScript', 'MySQL', 'Tailwind', 'Git', 'HTML5'],
+            CTC: [
+                'PHP',
+                'HTMX',
+                'JavaScript',
+                'SQLServer',
+                'Tailwind',
+                'Git',
+                'HTML5',
+            ],
+            'PS-QMP': [
+                'PHP',
+                'JavaScript',
+                'MySQL',
+                'BootStrap',
+                'Git',
+                'HTML5',
+            ],
+            'Lessons Learned': [
+                'PHP',
+                'JavaScript',
+                'MySQL',
+                'Tailwind',
+                'Git',
+                'HTML5',
+            ],
+            'Construction Webtool': [
+                'PHP',
+                'JavaScript',
+                'MySQL',
+                'SQLServer',
+                'Tailwind',
+                'Git',
+                'HTML5',
+            ],
+            'Resource Request Tool (RRT)': [
+                'PHP',
+                'JavaScript',
+                'SQLServer',
+                'Tailwind',
+                'Git',
+                'HTML5',
+            ],
+            // Add more projects...
+        }
+
+        // Helper to render tech badges
+        function renderBadges() {
+            const isDark = document.documentElement.classList.contains('dark')
+
+            document.querySelectorAll('.project-card').forEach((card) => {
+                const title = card.querySelector('h3')?.innerText.trim()
+                const techList = projectTech[title]
+                const container = card.querySelector('.tech-tags')
+
+                if (techList && container) {
+                    container.innerHTML = '' // clear old badges
+
+                    techList.forEach((tech, index) => {
+                        const meta = techMeta[tech]
+                        if (!meta) return
+
+                        const badge = document.createElement('div')
+                        badge.className =
+                            'flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-md border transition-transform hover:scale-105 glow-badge'
+
+                        // Set brand color variable
+                        badge.style.setProperty(
+                            '--glow-color',
+                            meta.color + '80',
+                        ) // 50% opacity glow
+
+                        // Randomize animation delay slightly for staggered effect
+                        const delay = (
+                            index * 0.3 +
+                            Math.random() * 0.5
+                        ).toFixed(2)
+                        badge.style.animationDelay = `${delay}s`
+
+                        // Adaptive background
+                        badge.style.backgroundColor = isDark
+                            ? 'rgba(255, 255, 255, 0.05)'
+                            : 'rgba(0, 0, 0, 0.05)'
+
+                        badge.style.borderColor = meta.color
+                        badge.style.color = meta.color
+
+                        // Icon
+                        const img = document.createElement('img')
+                        img.src = meta.icon
+                        img.alt = tech
+                        img.className = 'w-4 h-4'
+                        if (meta.invertInDark && isDark)
+                            img.style.filter = 'invert(1)'
+
+                        // Label
+                        const span = document.createElement('span')
+                        span.innerText = tech
+
+                        badge.appendChild(img)
+                        badge.appendChild(span)
+                        container.appendChild(badge)
+                    })
+                }
+            })
+        }
+
+        // Initial render
+        window.onload = renderBadges
+
+        // Watch for dark mode toggle
+        const observer = new MutationObserver(() => renderBadges())
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class'],
+        })
+    </script>
 </html>
