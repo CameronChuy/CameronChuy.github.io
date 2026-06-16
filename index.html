@@ -3,724 +3,486 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cameron Cary</title>
+        <title>Cameron Cary — Platform Engineer</title>
+        <meta name="description" content="Platform Engineer & Full-Stack Developer. Backend systems, AI integration, enterprise software." />
 
         <link href="/tailwind.css" rel="stylesheet" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&family=Space+Grotesk:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
     </head>
 
-    <body
-        class="bg-background-light text-gray-800 dark:bg-background dark:text-gray-200"
-    >
+    <body class="bg-background-light text-gray-800 dark:bg-background dark:text-gray-200">
+
         <!-- Navbar -->
-        <nav
-            class="w-11/12 fixed top-0 left-1/2 -translate-x-1/2 bg-white/40 backdrop-blur-md border-b rounded-full border-white/20 shadow-sm z-50 my-4 mx-auto"
-        >
-            <div
-                class="max-w-5xl mx-auto flex justify-between items-center p-4"
-            >
-                <h1 class="font-heading text-2xl font-bold text-primary">
-                    Cameron Cary
-                </h1>
-                <div class="space-x-4">
-                    <a
-                        href="#about"
-                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
-                        >About</a
-                    >
-                    <a
-                        href="#projects"
-                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
-                        >Projects</a
-                    >
-                    <a
-                        href="#contact"
-                        class="font-accent font-semibold uppercase text-sm tracking-wide hover:text-accent"
-                        >Contact</a
-                    >
-                    <button
-                        id="theme-toggle"
-                        class="font-accent font-semibold uppercase text-sm px-3 py-1 border rounded-lg"
-                    >
-                        Toggle Theme
+        <nav class="w-11/12 fixed top-0 left-1/2 -translate-x-1/2 bg-white/50 dark:bg-background/50 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-sm z-50 my-4 mx-auto rounded-full">
+            <div class="max-w-5xl mx-auto flex justify-between items-center px-6 py-3">
+                <a href="#hero" class="font-heading text-xl font-bold text-primary">CC</a>
+                <div class="flex items-center gap-6">
+                    <a href="#about"      class="font-accent font-semibold uppercase text-xs tracking-widest hover:text-primary transition hidden sm:block">About</a>
+                    <a href="#experience" class="font-accent font-semibold uppercase text-xs tracking-widest hover:text-primary transition hidden sm:block">Experience</a>
+                    <a href="#projects"   class="font-accent font-semibold uppercase text-xs tracking-widest hover:text-primary transition hidden sm:block">Projects</a>
+                    <a href="#contact"    class="font-accent font-semibold uppercase text-xs tracking-widest hover:text-primary transition hidden sm:block">Contact</a>
+                    <button id="theme-toggle" class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:border-primary transition text-base">
+                        <span id="theme-icon">🌙</span>
                     </button>
                 </div>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section
-            class="flex flex-col justify-center items-center text-center min-h-screen px-4"
-            id="hero"
-        >
-            <h2
-                class="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-4"
-            >
-                Howdy, I'm <span class="text-primary">Cameron Cary</span>
-            </h2>
-            <p
-                class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8"
-            >
-                Crafting reliable, maintainable web solutions that just
-                work—front to back.
-            </p>
-            <a
-                href="#projects"
-                class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary transition"
-            >
-                View My Work
-            </a>
-        </section>
+        <!-- ==================== HERO ==================== -->
+        <section id="hero" class="relative flex flex-col justify-center items-center text-center min-h-screen px-4 pt-24 pb-8 overflow-hidden">
 
-        <!-- About Section -->
-        <section id="about" class="max-w-4xl mx-auto py-20 px-4">
-            <h3
-                class="font-heading text-4xl font-bold mb-6 text-center text-primary"
-            >
-                About Me
-            </h3>
-            <p
-                class="font-sans text-lg leading-relaxed text-gray-400 text-center"
-            >
-                Backend-focused software with a strong background in PHP,
-                Python, and custom frameworks. I’ve built applications that
-                streamline operations, reduce project bottlenecks, and improve
-                compliance tracking across large organizations. I enjoy
-                mentoring others, defining development standards, and designing
-                systems that last.
-            </p>
-        </section>
+            <!-- Animated gradient orbs -->
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
 
-        <!-- Experience -->
-        <section id="experience" class="max-w-4xl mx-auto py-20 px-4">
-            <h3 class="text-3xl font-bold mb-6 text-center text-primary">
-                Experience
-            </h3>
+            <div class="relative z-10 max-w-4xl mx-auto">
 
-            <div
-                class="bg-background-light dark:bg-gray-900/70 rounded-2xl shadow-lg border border-accent/50 p-6"
-            >
-                <h4 class="text-xl font-semibold text-primary mb-1">
-                    Software Engineer II (Backend) — California State Government
-                </h4>
-                <p class="text-gray-600 dark:text-gray-400 mb-4 italic">
-                    Feb 2024 – Present
+                <!-- Status pill -->
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-1.5 mb-6 reveal">
+                    <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                    <span class="font-accent text-xs font-semibold text-primary uppercase tracking-widest">Open to new opportunities</span>
+                </div>
+
+                <!-- Name -->
+                <h1 class="font-heading text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight leading-none mb-4 reveal">
+                    Cameron<br><span class="text-primary">Cary</span>
+                </h1>
+
+                <!-- Typewriter -->
+                <div class="font-sans text-lg md:text-xl text-gray-400 mb-3 h-7 reveal">
+                    <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+                </div>
+
+                <!-- Subheading -->
+                <p class="font-sans text-sm text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-10 reveal">
+                    Backend-focused engineer who shipped enterprise systems serving 50,000+ state employees — under policy constraints, with no external libraries, faster than any centralized IT team.
                 </p>
 
-                <p class="text-gray-500 dark:text-gray-300 mb-4">
-                    Worked in a compliance-driven government unit without an
-                    existing software division, serving as a founding engineer
-                    and technical lead for a new development function. Operated
-                    under strict tooling restrictions (limited external
-                    libraries or package managers) while building modern,
-                    scalable solutions to improve efficiency across Northern
-                    CalTrans. Collaborated directly with stakeholders to define
-                    workflows, reduce bottlenecks, and deliver applications far
-                    faster than the centralized IT group.
+                <!-- Stats row -->
+                <div class="flex gap-4 md:gap-10 justify-center mb-10 flex-wrap reveal">
+                    <div class="stat-item">
+                        <div class="font-heading text-3xl md:text-4xl font-bold text-primary">
+                            <span class="count-up" data-target="50" data-suffix="K">0</span>
+                        </div>
+                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Users Served</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="font-heading text-3xl md:text-4xl font-bold text-primary">4M+</div>
+                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Lines Maintained</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="font-heading text-2xl md:text-4xl font-bold text-primary leading-none">
+                            18mo<span class="text-gray-400 text-xl md:text-2xl mx-1">→</span>6wk
+                        </div>
+                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Delivery Time</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="font-heading text-3xl md:text-4xl font-bold text-primary">
+                            <span class="count-up" data-target="10">0</span>+
+                        </div>
+                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Apps Shipped</div>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex gap-4 justify-center flex-wrap reveal">
+                    <a href="#projects" class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-8 py-3 rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:opacity-90 transition-all text-sm">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="font-accent font-semibold uppercase tracking-wide border border-primary/50 text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-all text-sm">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-50">
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section id="about" class="max-w-5xl mx-auto py-16 md:py-28 px-4">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+                <div>
+                    <span class="section-label reveal">About Me</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-8 leading-tight reveal">
+                        I build systems<br>that <span class="text-primary">actually work.</span>
+                    </h2>
+                    <p class="font-sans text-gray-500 dark:text-gray-400 leading-relaxed mb-5 reveal">
+                        I'm a backend-focused full-stack developer with 2.5 years building production systems under some of the tightest constraints imaginable — government compliance, no package managers, strict security reviews — and shipping faster than teams with unlimited resources.
+                    </p>
+                    <p class="font-sans text-gray-500 dark:text-gray-400 leading-relaxed mb-8 reveal">
+                        Lately I've been deep in AI integration: a five-agent assistant suite with MCP orchestration, GraphRAG, and RAG pipelines. I care about architecture that holds up under pressure, mentorship, and code that earns its existence.
+                    </p>
+                    <div class="flex gap-3 flex-wrap reveal">
+                        <a href="https://github.com/cameroncary" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                        <a href="https://linkedin.com/in/cameroncary" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                        <a href="mailto:cameroncary00@gmail.com" class="social-link social-link-primary">Email Me</a>
+                    </div>
+                </div>
+
+                <!-- Skills grid -->
+                <div class="reveal">
+                    <div class="bg-white/60 dark:bg-gray-900/60 rounded-2xl border border-gray-200 dark:border-white/10 p-6">
+                        <h4 class="font-accent text-xs uppercase tracking-widest text-gray-400 mb-5">Primary Stack</h4>
+                        <div class="skills-grid" id="skills-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERIENCE ==================== -->
+        <section id="experience" class="max-w-4xl mx-auto py-16 md:py-28 px-4">
+            <span class="section-label text-center block reveal">Work History</span>
+            <h2 class="font-heading text-4xl font-bold mb-8 md:mb-16 text-center reveal">Experience</h2>
+
+            <div class="experience-card reveal">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-primary">Lead Platform Engineer</h3>
+                        <p class="font-sans text-gray-500 dark:text-gray-400 mt-0.5">California State Government — CalTrans Capital Outlay Support</p>
+                    </div>
+                    <div class="experience-badge mt-2 md:mt-0">Feb 2024 – Present</div>
+                </div>
+
+                <p class="font-sans text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
+                    Founding engineer of a new software division within a compliance-driven government unit. Built and led a development function from zero — operating under strict policy constraints (no external libraries, limited tooling) while consistently out-delivering the centralized IT group.
                 </p>
 
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Reduced project delivery time from
-                            <span class="font-semibold text-primary"
-                                >18 months to 6 weeks</span
-                            >
-                            by introducing agile practices and leading
-                            architecture design.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Reduced project delivery time from <strong class="text-primary font-semibold">18 months to 6 weeks</strong> by introducing agile practices and leading architecture design</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Co-created a Laravel-inspired
-                            <span class="font-semibold text-primary"
-                                >vanilla PHP framework</span
-                            >
-                            under policy constraints, enabling modern backend
-                            development without external libraries.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Built a <strong class="text-primary font-semibold">Laravel-inspired vanilla PHP framework</strong> under policy constraints, enabling modern backend patterns without external libraries</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Established
-                            <span class="font-semibold text-primary"
-                                >Git workflows, coding standards, and dev
-                                environments</span
-                            >
-                            for team-wide adoption.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Developed a custom <strong class="text-primary font-semibold">DevOps monitoring and observability suite</strong> with traffic analysis, error alerting, and deployment dashboards</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Developed a
-                            <span class="font-semibold text-primary"
-                                >DevOps monitoring suite</span
-                            >
-                            with traffic analysis and automated error
-                            alerts.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Automated <strong class="text-primary font-semibold">ETL data pipelines</strong> serving Northern CalTrans, eliminating weekly manual maintenance cycles</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Automated
-                            <span class="font-semibold text-primary"
-                                >data pipelines</span
-                            >, eliminating weekly maintenance and serving
-                            Northern CalTrans.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Maintained and modernized <strong class="text-primary font-semibold">~4 million lines of legacy code</strong> across 10 production applications serving 50,000+ state employees</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Led and mentored interns; collaborated on
-                            <span class="font-semibold text-primary"
-                                >database architecture and migration
-                                planning</span
-                            >.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Established <strong class="text-primary font-semibold">Git workflows, coding standards, and dev environments</strong> for team-wide adoption; mentored junior developers and interns</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg
-                            class="w-5 h-5 text-primary flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                        <span
-                            >Spearheaded
-                            <span class="font-semibold text-primary"
-                                >stakeholder communication workflows</span
-                            >, improving transparency and alignment.</span
-                        >
+                        <div class="experience-bullet"></div>
+                        <span class="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Collaborated directly with stakeholders to <strong class="text-primary font-semibold">design database architecture</strong>, define workflows, and improve cross-department transparency</span>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-20 px-4">
-            <h3
-                class="font-heading text-4xl font-bold mb-16 text-center text-primary"
-            >
-                Paid Projects
-            </h3>
-            <div
-                class="bg-yellow-200/30 backdrop-blur-md border border-yellow-400/60 text-yellow-600 font-semibold rounded-xl w-full p-3 my-4 text-center shadow-[0_0_15px_rgba(255,223,0,0.6)]"
-            >
-                ⚠️ Notice: Content undergoing NDA redaction process
-            </div>
+        <!-- ==================== PERSONAL PROJECTS ==================== -->
+        <section id="personal-projects" class="py-16 md:py-28 px-4">
+            <div class="max-w-5xl mx-auto">
+                <span class="section-label text-center block reveal">Side Work</span>
+                <h2 class="font-heading text-4xl font-bold mb-4 text-center reveal">Personal Projects</h2>
+                <p class="font-sans text-gray-500 text-center mb-10 md:mb-16 max-w-md mx-auto reveal">
+                    Things I build outside of work to explore new tech, solve real problems, or just see if I can.
+                </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Timeline item
-                <div class="project-card">
-                    Vertical neon line
-                    <div
-                        class="vert-neon"
-                    ></div>
-                    <div
-                        class="project-card"
-                    >
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            DMU Data Extraction Automation
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            Automate data extraction process across the CalTrans
-                            software suite utilizing Python and PlayWright.
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <!-- Caryon Agent Suite -->
+                    <div class="personal-project-card featured-card reveal">
+                        <div class="flex items-start justify-between mb-5">
+                            <div class="project-icon bg-primary/10 border border-primary/30 rounded-xl p-3">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                            </div>
+                            <span class="featured-badge">AI / Agents</span>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-primary mb-3">Caryon Agent Suite</h3>
+                        <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                            A five-agent AI assistant suite with a custom MCP orchestration layer, GraphRAG vector database, and RAG system integration. Routes tasks to specialized agents — each scoped to a domain — through a unified coordination layer. Built as a personal intelligence OS.
                         </p>
-                        <a
-                            href="#"
-                            class="view-btn"
-                        >
-                            View Project
-                        </a>
-                    </div>
-                </div> -->
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            Nikke
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            A web application and framework utility that tracks
-                            usage across the NR COS DMU software suite and
-                            provides ongoing data analysis.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            Construction Webtool
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            Web platform replacing the North Region Construction
-                            Administration division’s FileMaker system, with
-                            capabilities for managing employees, tracking
-                            project associations, and verifying contractor
-                            obligations and labor compliance.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            CTC
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            A web application that allows project managers to
-                            track at-risk projects, log critical events, and
-                            prepare items for presentation to the California
-                            Transportation Commission.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            Resource Request Tool (RRT)
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            A web application for centralized project managers
-                            to request time commitment resource estimations from
-                            organization units for individual tasks.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            Lessons Learned
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            A web application for logging project improvement
-                            insights to support more accurate resource
-                            estimation on future, similar projects.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Timeline item -->
-                <div class="project-container">
-                    <!-- Vertical neon line -->
-                    <div class="vert-neon"></div>
-                    <div class="project-card">
-                        <h3
-                            class="font-accent text-2xl font-semibold text-primary mb-2"
-                        >
-                            PS-QMP
-                        </h3>
-                        <p class="font-sans text-gray-400 mb-4">
-                            A simple web application built to track the
-                            verification of key project milestone completion.
-                        </p>
-                        <a href="#" class="view-btn"> View Project </a>
-                        <div class="tech-tags flex flex-wrap gap-2 mt-4"></div>
-                    </div>
-                </div>
-
-                <!-- Project Card with image -->
-                <!-- <div class="max-w-4xl mx-auto my-10">
-                    <div
-                        class="bg-gray-800/60 dark:bg-gray-900/70 rounded-2xl overflow-hidden shadow-lg border border-accent/50 hover:shadow-accent/40 transition"
-                    > -->
-                <!-- Image (optional) -->
-                <!-- <div class="aspect-video bg-gray-700">
-                            <img
-                                src="https://via.placeholder.com/800x450"
-                                alt="Project preview"
-                                class="w-full h-full object-cover"
-                            />
-                        </div> -->
-
-                <!-- Content -->
-                <!-- <div class="p-6">
-                            <h3
-                                class="font-accent text-2xl font-semibold text-primary mb-2"
-                            >
-                                Project Title
-                            </h3>
-                            <p class="font-sans text-gray-400 mb-4">
-                                A short description of the project. Explain what
-                                it does, why it's cool, or the tech stack you
-                                used.
-                            </p> -->
-
-                <!-- Tags / Tech stack -->
-                <!-- <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
-                                >
-                                    PHP
-                                </span>
-                                <span
-                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
-                                >
-                                    Tailwind
-                                </span>
-                                <span
-                                    class="px-3 py-1 rounded-full text-sm font-accent bg-accent/20 text-accent"
-                                >
-                                    MySQL
-                                </span>
-                            </div> -->
-
-                <!-- CTA -->
-                <!-- <a
-                                href="#"
-                                class="view-btn"
-                            >
-                                View Project
-                            </a>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MCP</span>
+                            <span class="tech-tag">GraphRAG</span>
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">Vector DB</span>
                         </div>
                     </div>
-                </div> -->
+
+                    <!-- JobTrack -->
+                    <div class="personal-project-card reveal">
+                        <div class="flex items-start justify-between mb-5">
+                            <div class="project-icon bg-primary/10 border border-primary/30 rounded-xl p-3">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <span class="wip-badge">In Progress</span>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-primary mb-3">JobTrack</h3>
+                        <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                            Full-stack job application management system with AI-powered fit scoring, automated cover letter generation, resume tailoring suggestions, and multi-source job discovery. Scores roles against a candidate profile and tiers them automatically. Built for my own job search.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="max-w-3xl mx-auto py-20 px-4 text-center">
-            <h3 class="font-heading text-3xl font-bold mb-6 text-primary">
-                Get In Touch
-            </h3>
-            <p class="font-sans text-lg text-gray-400 mb-6">
-                Feel free to reach out if you'd like to collaborate or just say
-                hi!
-            </p>
-            <a
-                href="mailto:cameroncary00@gmail.com"
-                class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary transition"
-            >
-                Say Hello
-            </a>
+        <!-- ==================== PROFESSIONAL PROJECTS ==================== -->
+        <section id="projects" class="py-16 md:py-28 px-4">
+            <div class="max-w-5xl mx-auto">
+                <span class="section-label text-center block reveal">Professional Work</span>
+                <h2 class="font-heading text-4xl font-bold mb-4 text-center reveal">Paid Projects</h2>
+                <p class="font-sans text-gray-500 text-center mb-8 max-w-md mx-auto reveal">
+                    Enterprise applications built for California state government while operating as founding engineer.
+                </p>
+
+                <div class="nda-banner mb-10 reveal">
+                    <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Project details undergoing NDA redaction — full case studies available upon request.</span>
+                </div>
+
+                <div id="professional-projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact" class="py-16 md:py-28 px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <span class="section-label text-center block reveal">Let's Talk</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6 reveal">Get In Touch</h2>
+                <p class="font-sans text-gray-500 mb-12 reveal">
+                    I'm actively looking for my next role. If you have an opportunity or just want to connect, I'd love to hear from you.
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap reveal">
+                    <a href="mailto:cameroncary00@gmail.com" class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-8 py-4 rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:opacity-90 transition-all text-sm">
+                        cameroncary00@gmail.com
+                    </a>
+                </div>
+                <div class="flex gap-8 justify-center mt-10 reveal">
+                    <a href="https://github.com/cameroncary" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">GitHub</a>
+                    <a href="https://linkedin.com/in/cameroncary" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">LinkedIn</a>
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
-        <footer class="font-sans text-center py-6 text-gray-500 text-sm">
-            © 2025 Cameron Cary. All rights reserved.
+        <footer class="border-t border-gray-200 dark:border-white/10 py-8 text-center">
+            <p class="font-sans text-xs text-gray-400">© 2026 Cameron Cary. Built with care.</p>
         </footer>
+
     </body>
 
     <script>
+        // ---- Theme toggle ----
         const themeToggle = document.getElementById('theme-toggle')
-        const root = document.documentElement // or document.body
+        const themeIcon   = document.getElementById('theme-icon')
+        const root        = document.documentElement
 
-        // Load saved preference
-        if (localStorage.getItem('theme') === 'dark') {
-            root.classList.add('dark')
+        function updateThemeIcon() {
+            themeIcon.textContent = root.classList.contains('dark') ? '☀️' : '🌙'
         }
+
+        if (localStorage.getItem('theme') === 'dark') root.classList.add('dark')
+        updateThemeIcon()
 
         themeToggle.addEventListener('click', () => {
             root.classList.toggle('dark')
-            if (root.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark')
-            } else {
-                localStorage.setItem('theme', 'light')
-            }
+            localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light')
+            updateThemeIcon()
+            renderSkills()
         })
-        const techMeta = {
-            PHP: {
-                color: '#777BB4',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-            },
-            Laravel: {
-                color: '#FF2D20',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
-            },
-            MySQL: {
-                color: '#4479A1',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-            },
-            SQLServer: {
-                color: '#4479A1',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
-            },
-            Docker: {
-                color: '#2496ED',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-            },
-            Python: {
-                color: '#3776AB',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-            },
-            Flask: {
-                color: '#000000',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
-                invertInDark: true,
-            },
-            Django: {
-                color: '#092E20',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
-            },
-            NextJS: {
-                color: '#000000',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-                invertInDark: true,
-            },
-            Tailwind: {
-                color: '#38BDF8',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-            },
-            BootStrap: {
-                color: '#7952B3',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
-            },
-            JavaScript: {
-                color: '#F7DF1E',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-            },
-            HTML5: {
-                color: '#E34F26',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-            },
-            CSS3: {
-                color: '#1572B6',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-            },
-            Git: {
-                color: '#F05032',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-            },
-            Linux: {
-                color: '#FCC624',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
-            },
-            HTMX: {
-                color: '#3465A4',
-                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg',
-            },
-        }
 
-        const projectTech = {
-            Nikke: ['PHP', 'JavaScript', 'MySQL', 'Tailwind', 'Git', 'HTML5'],
-            CTC: [
-                'PHP',
-                'HTMX',
-                'JavaScript',
-                'SQLServer',
-                'Tailwind',
-                'Git',
-                'HTML5',
-            ],
-            'PS-QMP': [
-                'PHP',
-                'JavaScript',
-                'MySQL',
-                'BootStrap',
-                'Git',
-                'HTML5',
-            ],
-            'Lessons Learned': [
-                'PHP',
-                'JavaScript',
-                'MySQL',
-                'Tailwind',
-                'Git',
-                'HTML5',
-            ],
-            'Construction Webtool': [
-                'PHP',
-                'JavaScript',
-                'MySQL',
-                'SQLServer',
-                'Tailwind',
-                'Git',
-                'HTML5',
-            ],
-            'Resource Request Tool (RRT)': [
-                'PHP',
-                'JavaScript',
-                'SQLServer',
-                'Tailwind',
-                'Git',
-                'HTML5',
-            ],
-            // Add more projects...
-        }
+        // ---- Typewriter ----
+        const phrases = [
+            'Platform Engineer.',
+            'Backend Developer.',
+            'AI Integration Specialist.',
+            'Full-Stack Engineer.',
+            'System Architect.',
+        ]
+        let phraseIndex = 0, charIndex = 0, deleting = false
+        const typewriterEl = document.getElementById('typewriter')
 
-        // Helper to render tech badges
-        function renderBadges() {
-            const isDark = document.documentElement.classList.contains('dark')
-
-            document.querySelectorAll('.project-card').forEach((card) => {
-                const title = card.querySelector('h3')?.innerText.trim()
-                const techList = projectTech[title]
-                const container = card.querySelector('.tech-tags')
-
-                if (techList && container) {
-                    container.innerHTML = '' // clear old badges
-
-                    techList.forEach((tech, index) => {
-                        const meta = techMeta[tech]
-                        if (!meta) return
-
-                        const badge = document.createElement('div')
-                        badge.className =
-                            'flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-md border transition-transform hover:scale-105 glow-badge'
-
-                        // Set brand color variable
-                        badge.style.setProperty(
-                            '--glow-color',
-                            meta.color + '80',
-                        ) // 50% opacity glow
-
-                        // Randomize animation delay slightly for staggered effect
-                        const delay = (
-                            index * 0.3 +
-                            Math.random() * 0.5
-                        ).toFixed(2)
-                        badge.style.animationDelay = `${delay}s`
-
-                        // Adaptive background
-                        badge.style.backgroundColor = isDark
-                            ? 'rgba(255, 255, 255, 0.05)'
-                            : 'rgba(0, 0, 0, 0.05)'
-
-                        badge.style.borderColor = meta.color
-                        badge.style.color = meta.color
-
-                        // Icon
-                        const img = document.createElement('img')
-                        img.src = meta.icon
-                        img.alt = tech
-                        img.className = 'w-4 h-4'
-                        if (meta.invertInDark && isDark)
-                            img.style.filter = 'invert(1)'
-
-                        // Label
-                        const span = document.createElement('span')
-                        span.innerText = tech
-
-                        badge.appendChild(img)
-                        badge.appendChild(span)
-                        container.appendChild(badge)
-                    })
+        function typeWriter() {
+            const current = phrases[phraseIndex]
+            if (!deleting) {
+                typewriterEl.textContent = current.substring(0, charIndex + 1)
+                charIndex++
+                if (charIndex === current.length) {
+                    deleting = true
+                    setTimeout(typeWriter, 2200)
+                    return
                 }
+            } else {
+                typewriterEl.textContent = current.substring(0, charIndex - 1)
+                charIndex--
+                if (charIndex === 0) {
+                    deleting = false
+                    phraseIndex = (phraseIndex + 1) % phrases.length
+                }
+            }
+            setTimeout(typeWriter, deleting ? 55 : 95)
+        }
+        typeWriter()
+
+        // ---- Scroll reveal ----
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed')
+                    revealObserver.unobserve(entry.target)
+                }
+            })
+        }, { threshold: 0.12 })
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el))
+
+        // ---- Count-up animation ----
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return
+                const el     = entry.target
+                const target = parseInt(el.dataset.target)
+                const suffix = el.dataset.suffix || ''
+                const start  = performance.now()
+                const dur    = 1800
+
+                function tick(now) {
+                    const t = Math.min((now - start) / dur, 1)
+                    const eased = 1 - Math.pow(1 - t, 3)
+                    const val = Math.round(eased * target)
+                    el.textContent = suffix === 'K' ? val + 'K' : val.toLocaleString()
+                    if (t < 1) requestAnimationFrame(tick)
+                }
+                requestAnimationFrame(tick)
+                countObserver.unobserve(el)
+            })
+        }, { threshold: 0.5 })
+
+        document.querySelectorAll('.count-up').forEach(el => countObserver.observe(el))
+
+        // ---- Skills grid ----
+        const skills = [
+            { name: 'Python',     color: '#3776AB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+            { name: 'PHP',        color: '#777BB4', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+            { name: 'TypeScript', color: '#3178C6', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+            { name: 'Go',         color: '#00ACD7', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
+            { name: 'React',      color: '#61DAFB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'Next.js',    color: '#888888', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', invertInDark: true },
+            { name: 'Docker',     color: '#2496ED', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+            { name: 'Linux',      color: '#E8A020', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
+            { name: 'PostgreSQL', color: '#4169E1', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+            { name: 'MySQL',      color: '#4479A1', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+            { name: 'Git',        color: '#F05032', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+            { name: 'Tailwind',   color: '#38BDF8', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+        ]
+
+        function renderSkills() {
+            const isDark = root.classList.contains('dark')
+            const grid   = document.getElementById('skills-grid')
+            if (!grid) return
+            grid.innerHTML = ''
+
+            skills.forEach(skill => {
+                const item = document.createElement('div')
+                item.className = 'skill-item'
+
+                const img = document.createElement('img')
+                img.src = skill.icon
+                img.alt = skill.name
+                img.className = 'w-6 h-6'
+                if (skill.invertInDark && isDark) img.style.filter = 'invert(1)'
+
+                const label = document.createElement('span')
+                label.className = 'font-accent text-xs font-medium'
+                label.style.color = skill.color
+                label.textContent = skill.name
+
+                item.appendChild(img)
+                item.appendChild(label)
+                grid.appendChild(item)
             })
         }
 
-        // Initial render
-        window.onload = renderBadges
+        renderSkills()
 
-        // Watch for dark mode toggle
-        const observer = new MutationObserver(() => renderBadges())
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ['class'],
+        // ---- Professional projects ----
+        const professionalProjects = [
+            {
+                name: 'Nikke',
+                description: 'Analytics platform tracking usage across the NR COS DMU software suite with real-time data analysis and visualizations.',
+                tech: ['PHP', 'JavaScript', 'MySQL', 'Tailwind'],
+            },
+            {
+                name: 'Construction Webtool',
+                description: 'Enterprise platform replacing a legacy FileMaker system for the North Region Construction Administration division — employee management, contractor compliance, and labor verification.',
+                tech: ['PHP', 'JS', 'MySQL', 'SQL Server', 'Tailwind'],
+            },
+            {
+                name: 'CTC',
+                description: 'Project risk tracker for logging critical events and preparing at-risk project items for California Transportation Commission presentations.',
+                tech: ['PHP', 'HTMX', 'JavaScript', 'SQL Server'],
+            },
+            {
+                name: 'Resource Request Tool',
+                description: 'Centralized tool for project managers to request time-commitment resource estimates from organizational units across districts.',
+                tech: ['PHP', 'JavaScript', 'SQL Server', 'Tailwind'],
+            },
+            {
+                name: 'Lessons Learned',
+                description: 'Knowledge base for logging project improvement insights to support more accurate resource estimation on future similar projects.',
+                tech: ['PHP', 'JavaScript', 'MySQL', 'Tailwind'],
+            },
+            {
+                name: 'PS-QMP',
+                description: 'Project milestone verification tracker for confirming key deliverables and phase completions across active projects.',
+                tech: ['PHP', 'JavaScript', 'MySQL', 'Bootstrap'],
+            },
+        ]
+
+        const proGrid = document.getElementById('professional-projects-grid')
+
+        professionalProjects.forEach((project, i) => {
+            const card = document.createElement('div')
+            card.className = 'pro-project-card reveal'
+            card.style.transitionDelay = `${i * 60}ms`
+
+            card.innerHTML = `
+                <h3 class="font-heading text-base font-bold text-primary mb-2">${project.name}</h3>
+                <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4 flex-1">${project.description}</p>
+                <div class="flex flex-wrap gap-1.5">
+                    ${project.tech.map(t => `<span class="tech-tag-sm">${t}</span>`).join('')}
+                </div>
+            `
+
+            proGrid.appendChild(card)
+            revealObserver.observe(card)
         })
     </script>
 </html>
