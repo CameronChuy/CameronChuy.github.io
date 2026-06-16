@@ -32,7 +32,7 @@
         </nav>
 
         <!-- ==================== HERO ==================== -->
-        <section id="hero" class="relative flex flex-col justify-center items-center text-center min-h-screen px-4 pt-24 pb-8 overflow-hidden">
+        <section id="hero" class="relative flex flex-col justify-center items-center text-center min-h-screen px-4 pt-24 pb-10 overflow-hidden">
 
             <!-- Animated gradient orbs -->
             <div class="hero-orb hero-orb-1"></div>
@@ -58,12 +58,12 @@
                 </div>
 
                 <!-- Subheading -->
-                <p class="font-sans text-sm text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-10 reveal">
+                <p class="font-sans text-sm text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-8 reveal">
                     Backend-focused engineer who shipped enterprise systems serving 50,000+ state employees — under policy constraints, with no external libraries, faster than any centralized IT team.
                 </p>
 
                 <!-- Stats row -->
-                <div class="flex gap-4 md:gap-10 justify-center mb-10 flex-wrap reveal">
+                <div class="flex gap-4 md:gap-10 justify-center mb-8 flex-wrap reveal">
                     <div class="stat-item">
                         <div class="font-heading text-3xl md:text-4xl font-bold text-primary">
                             <span class="count-up" data-target="50" data-suffix="K">0</span>
@@ -96,16 +96,16 @@
                     <a href="#projects" class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-8 py-3 rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:opacity-90 transition-all text-sm">
                         View My Work
                     </a>
-                    <a href="#contact" class="font-accent font-semibold uppercase tracking-wide border border-primary/50 text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-all text-sm">
+                    <a href="/resume.pdf" download="CameronCary_Resume.pdf" class="font-accent font-semibold uppercase tracking-wide border border-primary/50 text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-all text-sm flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                        Resume
+                    </a>
+                    <a href="#contact" class="font-accent font-semibold uppercase tracking-wide border border-white/20 text-gray-400 px-8 py-3 rounded-lg hover:border-primary hover:text-primary transition-all text-sm">
                         Get In Touch
                     </a>
                 </div>
             </div>
 
-            <!-- Scroll indicator -->
-            <div class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-50">
-                <div class="scroll-indicator"></div>
-            </div>
         </section>
 
         <!-- ==================== ABOUT ==================== -->
@@ -123,8 +123,8 @@
                         Lately I've been deep in AI integration: a five-agent assistant suite with MCP orchestration, GraphRAG, and RAG pipelines. I care about architecture that holds up under pressure, mentorship, and code that earns its existence.
                     </p>
                     <div class="flex gap-3 flex-wrap reveal">
-                        <a href="https://github.com/cameroncary" target="_blank" rel="noopener" class="social-link">GitHub</a>
-                        <a href="https://linkedin.com/in/cameroncary" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/CameronChuy" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/cameron-cary-b3a350172" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
                         <a href="mailto:cameroncary00@gmail.com" class="social-link social-link-primary">Email Me</a>
                     </div>
                 </div>
@@ -203,25 +203,39 @@
 
                     <!-- Caryon Agent Suite -->
                     <div class="personal-project-card featured-card reveal">
-                        <div class="flex items-start justify-between mb-5">
-                            <div class="project-icon bg-primary/10 border border-primary/30 rounded-xl p-3">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                </svg>
-                            </div>
-                            <span class="featured-badge">AI / Agents</span>
+                        <!-- Screenshot carousel -->
+                        <div class="project-carousel rounded-xl overflow-hidden border border-white/10 mb-5 -mx-1"
+                             data-slides='["/assets/caryon-ui.png","/assets/caryon-agents.png"]'
+                             data-alts='["Caryon MCP Router UI","Caryon agent responses"]'>
                         </div>
-                        <h3 class="font-heading text-2xl font-bold text-primary mb-3">Caryon Agent Suite</h3>
-                        <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-                            A five-agent AI assistant suite with a custom MCP orchestration layer, GraphRAG vector database, and RAG system integration. Routes tasks to specialized agents — each scoped to a domain — through a unified coordination layer. Built as a personal intelligence OS.
+
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-heading text-2xl font-bold text-primary">Caryon Agent Suite</h3>
+                            <span class="featured-badge ml-3 flex-shrink-0">Private</span>
+                        </div>
+
+                        <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+                            Internal AI operations layer for Caryon, Inc., a construction robotics startup. A custom MCP router dispatches tasks to five domain-scoped agents — each with its own system prompt, toolset, and guardrails.
                         </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
+
+                        <!-- Agent grid -->
+                        <div class="grid grid-cols-1 gap-2 mb-5">
+                            <div class="agent-row"><span class="agent-name">Aria</span><span class="agent-desc">PM — specs, tickets, PRDs, Supabase task sync</span></div>
+                            <div class="agent-row"><span class="agent-name">Forge</span><span class="agent-desc">Engineering — autonomous code, tests, Git, PR creation</span></div>
+                            <div class="agent-row"><span class="agent-name">Lore</span><span class="agent-desc">Research — sourced intel, grants, patents, market data</span></div>
+                            <div class="agent-row"><span class="agent-name">Dex</span><span class="agent-desc">Finance — runway, invoices, NSF SBIR budget tracking</span></div>
+                            <div class="agent-row"><span class="agent-name">Ward</span><span class="agent-desc">DevOps — infra health, CI/CD, AWS costs, incident response</span></div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">MCP</span>
-                            <span class="tech-tag">GraphRAG</span>
                             <span class="tech-tag">Claude API</span>
-                            <span class="tech-tag">Vector DB</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">GraphRAG</span>
+                            <span class="tech-tag">AWS</span>
                         </div>
+                        <button class="expand-btn" data-project="caryon">View Details →</button>
                     </div>
 
                     <!-- JobTrack -->
@@ -238,13 +252,14 @@
                         <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
                             Full-stack job application management system with AI-powered fit scoring, automated cover letter generation, resume tailoring suggestions, and multi-source job discovery. Scores roles against a candidate profile and tiers them automatically. Built for my own job search.
                         </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-tag">Next.js</span>
                             <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Supabase</span>
                             <span class="tech-tag">Claude API</span>
                             <span class="tech-tag">PostgreSQL</span>
                         </div>
+                        <button class="expand-btn" data-project="jobtrack">View Details →</button>
                     </div>
 
                 </div>
@@ -267,7 +282,7 @@
                     <span>Project details undergoing NDA redaction — full case studies available upon request.</span>
                 </div>
 
-                <div id="professional-projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+                <div id="professional-projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
             </div>
         </section>
 
@@ -285,11 +300,40 @@
                     </a>
                 </div>
                 <div class="flex gap-8 justify-center mt-10 reveal">
-                    <a href="https://github.com/cameroncary" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">GitHub</a>
-                    <a href="https://linkedin.com/in/cameroncary" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">LinkedIn</a>
+                    <a href="https://github.com/CameronChuy" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cameron-cary-b3a350172" target="_blank" rel="noopener" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">LinkedIn</a>
+                    <a href="/resume.pdf" download="CameronCary_Resume.pdf" class="font-accent text-xs uppercase tracking-widest text-gray-400 hover:text-primary transition">Resume</a>
                 </div>
             </div>
         </section>
+
+        <!-- ==================== PROJECT MODAL ==================== -->
+        <div id="project-modal" class="modal-overlay" aria-hidden="true">
+            <div class="modal-box" role="dialog">
+                <!-- Close -->
+                <button id="modal-close" class="modal-close" aria-label="Close">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+                <!-- Carousel (shown only when images exist) -->
+                <div id="modal-carousel-wrap" class="modal-carousel-wrap">
+                    <div id="modal-carousel" class="project-carousel modal-carousel-inner"></div>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div class="flex items-start justify-between gap-4 mb-4">
+                        <h2 id="modal-title" class="font-heading text-2xl font-bold text-primary"></h2>
+                        <span id="modal-badge" class="featured-badge flex-shrink-0"></span>
+                    </div>
+                    <p id="modal-desc" class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-5"></p>
+                    <div id="modal-extra" class="mb-5"></div>
+                    <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="border-t border-gray-200 dark:border-white/10 py-8 text-center">
@@ -435,34 +479,19 @@
         // ---- Professional projects ----
         const professionalProjects = [
             {
-                name: 'Nikke',
-                description: 'Analytics platform tracking usage across the NR COS DMU software suite with real-time data analysis and visualizations.',
-                tech: ['PHP', 'JavaScript', 'MySQL', 'Tailwind'],
-            },
-            {
                 name: 'Construction Webtool',
-                description: 'Enterprise platform replacing a legacy FileMaker system for the North Region Construction Administration division — employee management, contractor compliance, and labor verification.',
-                tech: ['PHP', 'JS', 'MySQL', 'SQL Server', 'Tailwind'],
-            },
-            {
-                name: 'CTC',
-                description: 'Project risk tracker for logging critical events and preparing at-risk project items for California Transportation Commission presentations.',
-                tech: ['PHP', 'HTMX', 'JavaScript', 'SQL Server'],
+                description: 'Replaced the North Region Construction Administration division\'s FileMaker system with a full web platform — eliminating manual data entry across employee management, contractor compliance tracking, and labor obligation verification for Northern CalTrans.',
+                tech: ['PHP', 'JavaScript', 'MySQL', 'SQL Server', 'Tailwind'],
             },
             {
                 name: 'Resource Request Tool',
-                description: 'Centralized tool for project managers to request time-commitment resource estimates from organizational units across districts.',
+                description: 'Replaced an email-and-spreadsheet workflow with a centralized web app that lets project managers request time-commitment estimates from org units. Reduced coordination overhead and gave leadership a real-time view of resource allocation across active projects.',
                 tech: ['PHP', 'JavaScript', 'SQL Server', 'Tailwind'],
             },
             {
-                name: 'Lessons Learned',
-                description: 'Knowledge base for logging project improvement insights to support more accurate resource estimation on future similar projects.',
+                name: 'Nikke',
+                description: 'Built an internal analytics platform that passively tracks usage across the entire NR COS DMU software suite. Gave the team its first visibility into how applications were actually being used — surfacing underutilized tools and informing where to invest development time.',
                 tech: ['PHP', 'JavaScript', 'MySQL', 'Tailwind'],
-            },
-            {
-                name: 'PS-QMP',
-                description: 'Project milestone verification tracker for confirming key deliverables and phase completions across active projects.',
-                tech: ['PHP', 'JavaScript', 'MySQL', 'Bootstrap'],
             },
         ]
 
@@ -484,5 +513,189 @@
             proGrid.appendChild(card)
             revealObserver.observe(card)
         })
+
+        // ---- Modal ----
+        const modalData = {
+            caryon: {
+                title: 'Caryon Agent Suite',
+                badge: 'Private',
+                badgeClass: 'featured-badge',
+                slides: ['/assets/caryon-ui.png', '/assets/caryon-agents.png'],
+                alts: ['Caryon MCP Router UI', 'Caryon agent responses'],
+                desc: 'Internal AI operations layer for Caryon, Inc., a construction robotics startup. A custom MCP router receives natural language requests and dispatches them to five domain-scoped agents — each with isolated system prompts, toolsets, and hard guardrails. Agents can be addressed individually (@Aria, @Forge…) or broadcast to all. Built on top of the Claude API with Supabase as the shared state layer.',
+                extra: [
+                    { name: 'Aria',  role: 'PM Agent',       desc: 'Translates goals into specs, tickets, PRDs, and roadmap updates. Syncs task status directly to the Supabase PM board in real time.' },
+                    { name: 'Forge', role: 'Engineering Agent', desc: 'Reads from the backlog, writes code, runs tests, manages Git branches, and opens PRs for founder review. Never merges autonomously.' },
+                    { name: 'Lore',  role: 'Research Agent',  desc: 'Deep sourced research across 6 domains: web, competitive intelligence, grants, regulatory, patents, and market data. Every claim is cited.' },
+                    { name: 'Dex',   role: 'Finance Agent',   desc: 'Tracks expenses, cash runway, invoices, and NSF SBIR grant budgets across two legal entities. Never initiates payments or mingles entities.' },
+                    { name: 'Ward',  role: 'DevOps Agent',    desc: 'Monitors infrastructure health, CI/CD pipelines, and AWS costs across Vercel + AWS. Can remediate autonomously once per incident.' },
+                ],
+                tags: ['Python', 'MCP', 'Claude API', 'Supabase', 'GraphRAG', 'AWS', 'PostgreSQL'],
+            },
+            jobtrack: {
+                title: 'JobTrack',
+                badge: 'In Progress',
+                badgeClass: 'wip-badge',
+                slides: [],
+                alts: [],
+                desc: 'Full-stack job application management system built for my own job search. Connects to the Greenhouse API to pull live job listings, scores each role against a hardcoded candidate profile using the Claude API, and tiers them automatically (Tier 1–3). From there it generates tailored cover letters and resume bullet suggestions per role — all server-side, no API key exposure.',
+                extra: [
+                    { name: 'Discovery',      role: 'Feature', desc: 'Greenhouse API integration with keyword, location, and category filtering. Manual paste-in for job descriptions outside Greenhouse.' },
+                    { name: 'AI Scoring',     role: 'Feature', desc: 'Claude scores each job on stack match, experience level, compensation, location, and domain relevance. Returns a fit % and 2-3 sentence summary.' },
+                    { name: 'Cover Letters',  role: 'Feature', desc: 'One-click generation of ready-to-send cover letters. Tone adapts to startup vs enterprise vs government. No em dashes, sounds human.' },
+                    { name: 'Status Tracker', role: 'Feature', desc: 'Tracks each application through 8 stages with notes, contact info, and follow-up reminders per job.' },
+                ],
+                tags: ['Next.js', 'TypeScript', 'Supabase', 'Claude API', 'PostgreSQL', 'Greenhouse API', 'Tailwind'],
+            },
+        }
+
+        const modalOverlay  = document.getElementById('project-modal')
+        const modalClose    = document.getElementById('modal-close')
+        const modalTitle    = document.getElementById('modal-title')
+        const modalBadge    = document.getElementById('modal-badge')
+        const modalDesc     = document.getElementById('modal-desc')
+        const modalExtra    = document.getElementById('modal-extra')
+        const modalTags     = document.getElementById('modal-tags')
+        const modalCarousel = document.getElementById('modal-carousel')
+        const modalCarouselWrap = document.getElementById('modal-carousel-wrap')
+        let activeModalCarousel = null
+
+        function openModal(key) {
+            const data = modalData[key]
+            if (!data) return
+
+            modalTitle.textContent = data.title
+            modalBadge.textContent = data.badge
+            modalBadge.className = data.badgeClass
+            modalDesc.textContent = data.desc
+
+            // Extra rows
+            modalExtra.innerHTML = ''
+            if (data.extra?.length) {
+                const table = document.createElement('div')
+                table.className = 'space-y-3'
+                data.extra.forEach(item => {
+                    const row = document.createElement('div')
+                    row.className = 'modal-extra-row'
+                    row.innerHTML = `<span class="modal-extra-name">${item.name}</span><div><span class="modal-extra-role">${item.role}</span><p class="modal-extra-desc">${item.desc}</p></div>`
+                    table.appendChild(row)
+                })
+                modalExtra.appendChild(table)
+            }
+
+            // Tags
+            modalTags.innerHTML = data.tags.map(t => `<span class="tech-tag">${t}</span>`).join('')
+
+            // Carousel
+            if (activeModalCarousel) { activeModalCarousel.stop(); activeModalCarousel = null }
+            modalCarousel.innerHTML = ''
+            modalCarousel.removeAttribute('data-slides')
+            modalCarousel.removeAttribute('data-alts')
+
+            if (data.slides?.length) {
+                modalCarouselWrap.style.display = ''
+                modalCarousel.dataset.slides = JSON.stringify(data.slides)
+                modalCarousel.dataset.alts   = JSON.stringify(data.alts)
+                activeModalCarousel = new ProjectCarousel(modalCarousel)
+            } else {
+                modalCarouselWrap.style.display = 'none'
+            }
+
+            modalOverlay.classList.add('open')
+            modalOverlay.setAttribute('aria-hidden', 'false')
+            document.body.style.overflow = 'hidden'
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('open')
+            modalOverlay.setAttribute('aria-hidden', 'true')
+            document.body.style.overflow = ''
+            if (activeModalCarousel) { activeModalCarousel.stop(); activeModalCarousel = null }
+        }
+
+        modalClose.addEventListener('click', closeModal)
+        modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal() })
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() })
+
+        document.querySelectorAll('.expand-btn').forEach(btn => {
+            btn.addEventListener('click', () => openModal(btn.dataset.project))
+        })
+
+        // ---- Project carousels ----
+        class ProjectCarousel {
+            constructor(el) {
+                this.el     = el
+                this.slides = JSON.parse(el.dataset.slides || '[]')
+                this.alts   = JSON.parse(el.dataset.alts   || '[]')
+                this.index  = 0
+                this.timer  = null
+                if (this.slides.length < 2) { this.renderSingle(); return }
+                this.render()
+                this.start()
+            }
+
+            renderSingle() {
+                if (!this.slides.length) return
+                const img = document.createElement('img')
+                img.src = this.slides[0]
+                img.alt = this.alts[0] || ''
+                img.classList.add('active')
+                this.el.appendChild(img)
+            }
+
+            render() {
+                this.slides.forEach((src, i) => {
+                    const img = document.createElement('img')
+                    img.src = src
+                    img.alt = this.alts[i] || ''
+                    if (i === 0) img.classList.add('active')
+                    this.el.appendChild(img)
+                })
+
+                const prev = document.createElement('button')
+                prev.className = 'carousel-btn carousel-btn-prev'
+                prev.innerHTML = '&#8249;'
+                prev.addEventListener('click', () => { this.stop(); this.go(this.index - 1); this.start() })
+                this.el.appendChild(prev)
+
+                const next = document.createElement('button')
+                next.className = 'carousel-btn carousel-btn-next'
+                next.innerHTML = '&#8250;'
+                next.addEventListener('click', () => { this.stop(); this.go(this.index + 1); this.start() })
+                this.el.appendChild(next)
+
+                const dots = document.createElement('div')
+                dots.className = 'carousel-dots'
+                this.slides.forEach((_, i) => {
+                    const dot = document.createElement('div')
+                    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '')
+                    dot.addEventListener('click', () => { this.stop(); this.go(i); this.start() })
+                    dots.appendChild(dot)
+                })
+                this.el.appendChild(dots)
+                this.dotsEl = dots
+                this.bindHover()
+            }
+
+            go(n) {
+                const imgs = this.el.querySelectorAll('img')
+                const dots = this.dotsEl?.querySelectorAll('.carousel-dot')
+                imgs[this.index].classList.remove('active')
+                dots?.[this.index].classList.remove('active')
+                this.index = (n + this.slides.length) % this.slides.length
+                imgs[this.index].classList.add('active')
+                dots?.[this.index].classList.add('active')
+            }
+
+            start() { this.timer = setInterval(() => this.go(this.index + 1), 3500) }
+            stop()  { clearInterval(this.timer) }
+
+            bindHover() {
+                this.el.addEventListener('mouseenter', () => this.stop())
+                this.el.addEventListener('mouseleave', () => this.start())
+            }
+        }
+
+        document.querySelectorAll('.project-carousel').forEach(el => new ProjectCarousel(el))
     </script>
 </html>
