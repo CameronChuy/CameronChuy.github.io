@@ -116,14 +116,14 @@
 
                 <!-- CTAs -->
                 <div class="flex gap-4 justify-center flex-wrap reveal">
-                    <a href="#projects" class="font-accent font-semibold uppercase tracking-wide bg-primary text-white px-8 py-3 rounded-lg shadow-lg shadow-primary/20 hover:opacity-90 text-sm">
+                    <a href="#projects" class="hero-cta hero-cta-primary font-accent font-semibold uppercase tracking-wide bg-primary text-white px-8 py-3 rounded-lg shadow-lg shadow-primary/20 hover:opacity-90 text-sm">
                         View My Work
                     </a>
-                    <a href="/resume.pdf" download="CameronCary_Resume.pdf" class="font-accent font-semibold uppercase tracking-wide border border-primary/50 text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white text-sm flex items-center gap-2">
+                    <a href="/resume.pdf" download="CameronCary_Resume.pdf" class="hero-cta font-accent font-semibold uppercase tracking-wide border border-primary/50 text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white text-sm flex items-center gap-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
                         Resume
                     </a>
-                    <a href="#contact" class="font-accent font-semibold uppercase tracking-wide border border-white/20 text-gray-400 px-8 py-3 rounded-lg hover:border-primary hover:text-primary text-sm">
+                    <a href="#contact" class="hero-cta font-accent font-semibold uppercase tracking-wide border border-white/20 text-gray-400 px-8 py-3 rounded-lg hover:border-primary hover:text-primary text-sm">
                         Get In Touch
                     </a>
                 </div>
@@ -538,6 +538,12 @@ void main(){
             updateThemeIcon()
             renderSkills()
         })
+
+        // ---- Nav scroll shadow ----
+        const nav = document.querySelector('nav')
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20)
+        }, { passive: true })
 
         // ---- Mobile menu ----
         const mobileMenuBtn  = document.getElementById('mobile-menu-btn')
