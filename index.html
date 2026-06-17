@@ -77,8 +77,8 @@
                     </div>
                     <div class="stat-divider hidden md:block"></div>
                     <div class="stat-item">
-                        <div class="font-heading text-3xl md:text-4xl font-bold text-primary leading-none">90%</div>
-                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Faster Delivery</div>
+                        <div class="font-heading text-3xl md:text-4xl font-bold text-primary leading-none">2 Yrs</div>
+                        <div class="font-accent text-xs text-gray-500 uppercase tracking-widest mt-1">Self-Taught to Lead</div>
                     </div>
                     <div class="stat-divider hidden md:block"></div>
                     <div class="stat-item">
@@ -213,7 +213,7 @@
                         </div>
 
                         <p class="font-sans text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-                            Internal AI operations layer for Caryon, Inc., a construction robotics startup. A custom MCP router dispatches tasks to five domain-scoped agents  -  each with its own system prompt, toolset, and guardrails.
+                            Internal AI operations layer built for a construction robotics company. A custom MCP router dispatches tasks to five domain-scoped agents  -  each with its own system prompt, toolset, and guardrails.
                         </p>
 
                         <!-- Agent grid -->
@@ -260,7 +260,10 @@
                             <span class="tech-tag">Claude API</span>
                             <span class="tech-tag">PostgreSQL</span>
                         </div>
-                        <button class="expand-btn" data-project="jobtrack">View Details →</button>
+                        <div class="flex items-center gap-4 mt-1">
+                            <button class="expand-btn" data-project="jobtrack">View Details →</button>
+                            <a href="https://github.com/CameronChuy/JobTrack" target="_blank" rel="noopener" class="project-ext-link">GitHub →</a>
+                        </div>
                     </div>
 
                     <!-- FitBot -->
@@ -290,7 +293,10 @@
                             <span class="tech-tag">NextAuth</span>
                             <span class="tech-tag">Docker</span>
                         </div>
-                        <button class="expand-btn" data-project="fitbot">View Details →</button>
+                        <div class="flex items-center gap-4 mt-1">
+                            <button class="expand-btn" data-project="fitbot">View Details →</button>
+                            <a href="https://fitbot-nine.vercel.app/" target="_blank" rel="noopener" class="project-ext-link">Live Demo →</a>
+                        </div>
                     </div>
 
                     <!-- Honorable Solutions -->
@@ -317,7 +323,10 @@
                             <span class="tech-tag">Tailwind v4</span>
                             <span class="tech-tag">Cloudflare Pages</span>
                         </div>
-                        <button class="expand-btn" data-project="honorable">View Details →</button>
+                        <div class="flex items-center gap-4 mt-1">
+                            <button class="expand-btn" data-project="honorable">View Details →</button>
+                            <a href="https://honorablesolutions.com" target="_blank" rel="noopener" class="project-ext-link">Visit Site →</a>
+                        </div>
                     </div>
 
                 </div>
@@ -634,7 +643,7 @@
                 badgeClass: 'featured-badge',
                 slides: ['/assets/caryon-ui.png', '/assets/caryon-agents.png'],
                 alts: ['Caryon MCP Router UI', 'Caryon agent responses'],
-                desc: 'Internal AI operations layer for Caryon, Inc., a construction robotics startup. A three-tier intent routing engine resolves requests via explicit agent selection, AI classification, and keyword fallback  -  with concurrent fan-out for multi-agent broadcasts. Built on a shared SDK with a reusable MCP server base class, Anthropic client wrapper with prompt caching, tool registry, and a Supabase-backed structured data layer. Each agent runs as an independently deployable MCP server.',
+                desc: 'Internal AI operations layer built for a construction robotics company. A three-tier intent routing engine resolves requests via explicit agent selection, AI classification, and keyword fallback  -  with concurrent fan-out for multi-agent broadcasts. Built on a shared SDK with a reusable MCP server base class, Anthropic client wrapper with prompt caching, tool registry, and a Supabase-backed structured data layer. Each agent runs as an independently deployable MCP server.',
                 extra: [
                     { name: 'Aria',  role: 'PM Agent',       desc: 'Translates goals into specs, tickets, PRDs, and roadmap updates. Syncs task status directly to the Supabase PM board in real time.' },
                     { name: 'Forge', role: 'Engineering Agent', desc: 'Reads from the backlog, writes code, runs tests, manages Git branches, and opens PRs for founder review. Never merges autonomously.' },
