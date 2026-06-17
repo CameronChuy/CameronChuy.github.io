@@ -1431,8 +1431,8 @@ html, body {
 
 .experience-card {
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(110%);
+  -webkit-backdrop-filter: blur(20px) saturate(110%);
   border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: 0 8px 32px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(0,0,0,0.02);
 }
@@ -1496,8 +1496,8 @@ html, body {
 
 .personal-project-card {
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(110%);
+  -webkit-backdrop-filter: blur(20px) saturate(110%);
   border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: 0 8px 32px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(0,0,0,0.02);
 }
@@ -2123,8 +2123,8 @@ html, body {
 
 .glass-panel {
   background: rgba(255, 255, 255, 0.62);
-  backdrop-filter: blur(20px) saturate(160%);
-  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(110%);
+  -webkit-backdrop-filter: blur(20px) saturate(110%);
   border: 1px solid rgba(255, 255, 255, 0.68);
   box-shadow: 0 8px 32px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.88), inset 0 -1px 0 rgba(0,0,0,0.025);
   border-radius: 16px;
@@ -2173,8 +2173,8 @@ html, body {
   gap: 0;
   padding: 80px 24px 28px;
   background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(24px) saturate(160%);
-  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(110%);
+  -webkit-backdrop-filter: blur(24px) saturate(110%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 8px 32px rgba(0,0,0,0.08);
   transform: translateY(-100%);
