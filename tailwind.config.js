@@ -16,7 +16,7 @@ module.exports = {
                 },
                 background: {
                     DEFAULT: '#2C2C2C', // Deep Charcoal
-                    light: '#FFFAFA', // Snow White
+                    light: '#F2F2F2', // Clean neutral
                 },
                 muted: {
                     DEFAULT: '#4A4A4A', // Medium Gray

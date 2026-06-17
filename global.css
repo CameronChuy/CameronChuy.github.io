@@ -24,26 +24,26 @@
     width: 700px;
     height: 700px;
     background: #D50032;
-    opacity: 0.07;
+    opacity: 0.13;
     top: -200px;
     right: -150px;
     animation: floatOrb 12s ease-in-out infinite;
 }
 .dark .hero-orb-1 {
-    opacity: 0.15;
+    opacity: 0.18;
 }
 .hero-orb-2 {
     width: 500px;
     height: 500px;
-    background: #FFC0CB;
-    opacity: 0.05;
+    background: #D50032;
+    opacity: 0.07;
     bottom: -100px;
     left: -100px;
     animation: floatOrb 16s ease-in-out infinite reverse;
     animation-delay: -4s;
 }
 .dark .hero-orb-2 {
-    opacity: 0.09;
+    opacity: 0.11;
 }
 .hero-orb-3 {
     width: 350px;
@@ -64,6 +64,18 @@
     25%  { transform: translate(40px, -40px) scale(1.06); }
     50%  { transform: translate(-25px, 30px) scale(0.94); }
     75%  { transform: translate(20px, 15px) scale(1.02); }
+}
+
+/* ---- Featured stat ---- */
+.featured-stat {
+    background: rgba(213, 0, 50, 0.06);
+    border: 1px solid rgba(213, 0, 50, 0.18);
+    border-radius: 14px;
+    padding: 10px 20px;
+}
+.dark .featured-stat {
+    background: rgba(213, 0, 50, 0.1);
+    border-color: rgba(213, 0, 50, 0.25);
 }
 
 /* ---- Typewriter cursor ---- */
